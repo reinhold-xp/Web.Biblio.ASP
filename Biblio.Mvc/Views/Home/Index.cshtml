@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "Home";
+}
+
+<main>
+   
+    <div class="container mt-4">
+        <img src="~/Images/biblio.png" class="custom-image img-fluid w-100" alt="biblio.png" />
+    </div>
+
+    <!--Jumbotron-->
+    <div class="container">
+        <div class="p-5 bg-light rounded">
+            <h1 class="display-4">Biblio</h1>
+            <p class="lead">Plongez dans un univers riche en idées inspirantes et découvrez les trésors des meilleurs livres.</p>
+            <hr class="my-4">
+            <a class="btn btn-dark btn-lg" href="@Url.Action("Index", "Book")" role="button">Découvrir la bibliothèque</a>
+        </div>
+    </div>
+
+</main>
