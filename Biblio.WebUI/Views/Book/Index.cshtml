@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "Books";
+}
+
+<div>
+    @foreach (var livre in Model.Collection)
+    {
+        <div class="book-container">
+
+            <img src="~/Images/@livre.Image" alt="@livre.Titre" class="img-fluid" />
+
+            <p class="mt-1">@(livre.Titre != null && livre.Titre.Length > 15 ? livre.Titre.Substring(0, 15) + " ..." : livre.Titre)</p>
+            <a class="btn btn-dark btn-sm" href="@Url.Action("Details", "Book", new { Id = livre.Id })">Aperçu</a>
+        </div>
+    }
+</div>

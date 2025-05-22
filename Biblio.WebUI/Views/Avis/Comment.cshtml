@@ -1,0 +1,40 @@
+﻿@model Biblio.WebUI.Models.BookViewModel
+@{
+    ViewBag.Title = "Comment";
+}
+
+<h2>Laissez un avis sur @Model.Livre.Titre </h2>
+
+@* Afficher les erreurs de validation du formulaire *@
+@Html.ValidationSummary(true, "", new { @class = "text-danger" })
+@using (Html.BeginForm("SaveComment", "Avis", FormMethod.Post))
+{
+    <div>
+        <label for="Nom">Nom</label>
+
+        @*@Html.TextBox("Nom", null, new { @class = "form-control", id = "Nom" })*@
+        <input type="text" name="Nom" id="Nom" class="form-control" required />
+    </div>
+    <div>
+        <label for="Commentaire">Commentaire</label>
+
+        @*@Html.TextArea("Commentaire", null, new { @class = "form-control", id = "Commentaire", rows = 4 })*@
+        <textarea name="Commentaire" id="Commentaire" class="form-control" rows="4" required></textarea>
+    </div>
+    <div>
+        <label for="Note">Note</label>
+
+        <select name="Note" id="Note" class="form-control" required>
+
+            @*<option value=""></option>*@
+            @for (double i = 0.5; i <= 5.0; i += 0.5)
+            {
+                <option value="@i">@i</option>
+            }
+        </select>
+    </div>
+    <div>
+        <input type="submit" value="Envoyer" class="btn btn-dark mt-2" />
+        <input type="hidden" value="@Model.Livre.Id" name="Id" id="Id" />
+    </div>
+}

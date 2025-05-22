@@ -1,0 +1,5 @@
+Biblio.Data/App.config
+Biblio.WebUI/web.config
+bin/
+obj/
+.vs/

@@ -1,0 +1,52 @@
+﻿@model Biblio.WebUI.Models.HomeViewModel
+@{
+    ViewBag.Title = "Home";
+}
+
+<div class="container mt-4">
+    <img src="~/Images/biblio.png" class="custom-image img-fluid w-100" alt="biblio.png" />
+</div>
+
+<!--Jumbotron-->
+<div class="container">
+    <div class="p-5 bg-light rounded">
+        <h1 class="display-4">Biblio</h1>
+        <p class="lead">Plongez dans un univers riche en idées inspirantes et découvrez les trésors des meilleurs livres.</p>
+        <hr class="my-4">
+        <a class="btn btn-dark btn-lg" href="@Url.Action("Index", "Book")" >Découvrir la bibliothèque</a>
+    </div>
+</div>
+
+<div class="container mt-4 ms-2">
+    @foreach (var obj in Model.Liste)
+    {
+        <div class="d-flex">
+
+            <span class="me-2">@obj.Livre.Titre</span>
+
+            @if (obj.Note == 0)
+            {
+                <div><span  class="fw-bold">Aucun avis</span></div>
+            }
+            else
+            {
+            <div class="">
+                @for (int i = 0; i < 5; i++)
+                {
+                    if (i < obj.Note)
+                    {
+                        <i class="bi bi-star-fill"></i> <!-- Étoile pleine -->
+                    }
+                    else
+                    {
+                        <i class="bi bi-star"></i> <!-- Étoile vide -->
+                    }
+                }
+
+                <span>(@obj.Avis.Count())</span>
+            </div>
+            }
+
+        </div> 
+    }
+</div>

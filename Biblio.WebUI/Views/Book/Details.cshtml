@@ -1,0 +1,15 @@
+﻿@model Biblio.WebUI.Models.BookViewModel
+@{
+    ViewBag.Title = Model.Livre.Titre;
+}
+
+
+<div class="container">
+    <h2>@Model.Livre.Titre</h2><br />
+    <p>@Model.Livre.Resume</p><br />
+
+    @*@Html.ActionLink("Laissez un avis", "Comment", "Avis", new { id = Model.Livre.Id }, new { @class = "info-link" })*@
+    <a class="info-link" href="@Url.Action("Comment", "Avis", new { Id = Model.Livre.Id })">Laissez un avis</a><br />
+    <a href="@Url.Action("Index", "Book")" class="btn btn-dark mt-4">Retour</a>
+</div>
+
