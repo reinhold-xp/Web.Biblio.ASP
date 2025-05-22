@@ -9,11 +9,9 @@ namespace Biblio.WebUI.Filters
     {
         public override void OnResultExecuting(ResultExecutingContext filterContext)
         {
-            string defaultLang = "fr";
-
+            var defaultLang = "fr";
             var routeData = filterContext.RouteData.Values;
-
-            string lang = (string)routeData["lang"];
+            var lang = (string)routeData["lang"];
             if (!String.IsNullOrEmpty(lang))
             {
                 defaultLang = lang;

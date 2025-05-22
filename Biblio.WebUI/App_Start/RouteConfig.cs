@@ -13,8 +13,32 @@ namespace Biblio.WebUI
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+            routes.MapRoute(
+                name: "Accueil",
+                url: "Accueil-Biblio",
+                defaults: new { controller = "Home", action = "Index" }
+            );
+
             routes.MapRoute("HomeEn", "en", new { lang = "en", controller = "Home", action = "Index" });
             routes.MapRoute("HomeFr", "fr", new { lang = "fr", controller = "Home", action = "Index" });
+
+            routes.MapRoute(
+                name: "Livres",
+                url: "Livres-Biblio",
+                defaults: new { controller = "Book", action = "Index" }
+            );
+
+            routes.MapRoute(
+                name: "Detail",
+                url: "Livre/{id}",
+                defaults: new { controller = "Book", action = "Details" }
+            );
+
+            routes.MapRoute(
+                name: "Contact",
+                url: "Contact-Biblio",
+                defaults: new { controller = "Home", action = "Contact" }
+            );
 
             routes.MapRoute(
                 name: "Default",
