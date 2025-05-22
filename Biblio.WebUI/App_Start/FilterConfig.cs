@@ -1,4 +1,5 @@
-﻿using System.Web;
+﻿using Biblio.WebUI.Filters;
+using System.Web;
 using System.Web.Mvc;
 
 namespace Biblio.WebUI
@@ -8,6 +9,7 @@ namespace Biblio.WebUI
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {
             filters.Add(new HandleErrorAttribute());
+            filters.Add(new LocalizedViewAttribute());
         }
     }
 }

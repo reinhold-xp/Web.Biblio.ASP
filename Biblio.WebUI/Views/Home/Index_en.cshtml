@@ -1,0 +1,19 @@
+﻿@model Biblio.WebUI.Models.HomeViewModel
+@{
+    ViewBag.Title = "Home";
+}
+
+<div class="container mt-4">
+    <img src="~/Images/biblio.png" class="custom-image img-fluid w-100" alt="biblio.png" />
+</div>
+
+<!--Jumbotron-->
+<div class="container">
+    <div class="p-5 bg-light rounded">
+        <h1 class="display-4">Biblio</h1>
+        <p class="">Dive into a world rich with inspiring ideas and discover the treasures of the best books</p>
+        <hr class="my-4">
+        <a class="btn btn-dark btn-lg" href="@Url.Action("Index", "Book")">Discover the library</a>
+
+    </div>
+</div>

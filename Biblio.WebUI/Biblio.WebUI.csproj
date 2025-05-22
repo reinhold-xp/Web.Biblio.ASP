@@ -166,6 +166,7 @@
     <Compile Include="Controllers\BookController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Filters\LocalizedViewAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -298,6 +299,7 @@
     <Content Include="Views\Book\Details.cshtml" />
     <Content Include="Views\Avis\Comment.cshtml" />
     <Content Include="Views\Book\Test.cshtml" />
+    <Content Include="Views\Home\Index_en.cshtml" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>

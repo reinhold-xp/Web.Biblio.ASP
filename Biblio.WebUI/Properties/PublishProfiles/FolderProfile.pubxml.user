@@ -2,8 +2,8 @@
 <!-- https://go.microsoft.com/fwlink/?LinkID=208121. -->
 <Project>
   <PropertyGroup>
-    <_PublishTargetUrl>C:\Users\Administrateur\source\repos\Web.Biblio.ASP\Biblio.Mvc\bin\app.publish\</_PublishTargetUrl>
-    <History>True|2025-05-20T22:41:13.0481463Z||;True|2025-05-21T00:35:52.5292512+02:00||;True|2025-05-20T12:03:19.7585587+02:00||;True|2025-05-19T20:32:26.4125056+02:00||;True|2025-05-16T19:28:47.4638909+02:00||;True|2025-05-14T18:57:18.0735613+02:00||;True|2025-05-12T18:50:37.3858899+02:00||;True|2025-05-12T18:35:28.7372099+02:00||;True|2025-05-12T12:33:35.0393085+02:00||;True|2025-05-12T10:09:11.0959250+02:00||;True|2025-05-07T18:06:07.6534643+02:00||;True|2025-05-07T15:43:32.8496489+02:00||;True|2025-05-07T15:39:51.1750793+02:00||;</History>
+    <_PublishTargetUrl>C:\Users\Administrateur\source\repos\Web.Biblio.ASP\Biblio.WebUI\bin\app.publish\</_PublishTargetUrl>
+    <History>True|2025-05-22T09:24:34.0073602Z||;True|2025-05-21T00:41:13.0481463+02:00||;True|2025-05-21T00:35:52.5292512+02:00||;True|2025-05-20T12:03:19.7585587+02:00||;True|2025-05-19T20:32:26.4125056+02:00||;True|2025-05-16T19:28:47.4638909+02:00||;True|2025-05-14T18:57:18.0735613+02:00||;True|2025-05-12T18:50:37.3858899+02:00||;True|2025-05-12T18:35:28.7372099+02:00||;True|2025-05-12T12:33:35.0393085+02:00||;True|2025-05-12T10:09:11.0959250+02:00||;True|2025-05-07T18:06:07.6534643+02:00||;True|2025-05-07T15:43:32.8496489+02:00||;True|2025-05-07T15:39:51.1750793+02:00||;</History>
     <LastFailureDetails />
   </PropertyGroup>
   <ItemGroup>
@@ -14,19 +14,19 @@
       <publishTime>09/10/2013 17:29:20</publishTime>
     </File>
     <File Include="bin/Biblio.Data.dll">
-      <publishTime>05/21/2025 00:35:48</publishTime>
+      <publishTime>05/22/2025 11:24:31</publishTime>
     </File>
     <File Include="bin/Biblio.Data.dll.config">
       <publishTime>05/14/2025 18:55:38</publishTime>
     </File>
     <File Include="bin/Biblio.Data.pdb">
-      <publishTime>05/21/2025 00:35:48</publishTime>
+      <publishTime>05/22/2025 11:24:31</publishTime>
     </File>
     <File Include="bin/Biblio.Logic.dll">
-      <publishTime>05/21/2025 00:41:10</publishTime>
+      <publishTime>05/22/2025 11:24:32</publishTime>
     </File>
     <File Include="bin/Biblio.Logic.pdb">
-      <publishTime>05/21/2025 00:41:10</publishTime>
+      <publishTime>05/22/2025 11:24:32</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
       <publishTime>06/16/2024 22:46:24</publishTime>
@@ -254,10 +254,10 @@
       <publishTime>10/20/2023 22:33:58</publishTime>
     </File>
     <File Include="bin/Web.Biblio.dll">
-      <publishTime>05/21/2025 00:41:11</publishTime>
+      <publishTime>05/22/2025 11:24:32</publishTime>
     </File>
     <File Include="bin/Web.Biblio.pdb">
-      <publishTime>05/21/2025 00:41:11</publishTime>
+      <publishTime>05/22/2025 11:24:32</publishTime>
     </File>
     <File Include="bin/WebGrease.dll">
       <publishTime>01/23/2014 13:57:34</publishTime>
@@ -368,7 +368,7 @@
       <publishTime>04/24/2025 19:12:19</publishTime>
     </File>
     <File Include="Global.asax">
-      <publishTime>05/05/2025 09:35:24</publishTime>
+      <publishTime>05/21/2025 16:23:57</publishTime>
     </File>
     <File Include="Images/16259_1984.png">
       <publishTime>05/05/2025 17:01:36</publishTime>
@@ -506,13 +506,16 @@
       <publishTime>05/05/2025 09:57:04</publishTime>
     </File>
     <File Include="Views/Avis/Comment.cshtml">
-      <publishTime>05/19/2025 23:00:22</publishTime>
+      <publishTime>05/21/2025 17:55:57</publishTime>
     </File>
     <File Include="Views/Book/Details.cshtml">
-      <publishTime>05/17/2025 15:48:30</publishTime>
+      <publishTime>05/21/2025 17:55:00</publishTime>
     </File>
     <File Include="Views/Book/Index.cshtml">
       <publishTime>05/20/2025 19:47:43</publishTime>
+    </File>
+    <File Include="Views/Book/Test.cshtml">
+      <publishTime>05/22/2025 10:00:40</publishTime>
     </File>
     <File Include="Views/Home/About.cshtml">
       <publishTime>04/24/2025 19:12:19</publishTime>
@@ -521,7 +524,7 @@
       <publishTime>05/20/2025 11:25:51</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
-      <publishTime>05/16/2025 18:14:09</publishTime>
+      <publishTime>05/22/2025 10:55:18</publishTime>
     </File>
     <File Include="Views/Home/SendMail.cshtml">
       <publishTime>05/19/2025 17:07:26</publishTime>
@@ -554,19 +557,19 @@
       <publishTime>04/24/2025 19:12:27</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>05/19/2025 17:10:10</publishTime>
+      <publishTime>05/21/2025 17:06:40</publishTime>
     </File>
     <File Include="Views/Shared/_LoginPartial.cshtml">
       <publishTime>04/24/2025 19:12:27</publishTime>
     </File>
     <File Include="Views/Web.config">
-      <publishTime>05/05/2025 09:56:17</publishTime>
+      <publishTime>05/21/2025 16:46:29</publishTime>
     </File>
     <File Include="Views/_ViewStart.cshtml">
       <publishTime>04/24/2025 19:12:19</publishTime>
     </File>
     <File Include="web.config">
-      <publishTime>05/19/2025 20:32:24</publishTime>
+      <publishTime>05/22/2025 11:24:32</publishTime>
     </File>
   </ItemGroup>
 </Project>

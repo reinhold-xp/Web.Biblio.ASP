@@ -13,6 +13,9 @@ namespace Biblio.WebUI
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+            routes.MapRoute("HomeEn", "en", new { lang = "en", controller = "Home", action = "Index" });
+            routes.MapRoute("HomeFr", "fr", new { lang = "fr", controller = "Home", action = "Index" });
+
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
